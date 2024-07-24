@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showLoader() ; 
     const fetchProducts = async () => {
         try {
-            const response = await fetch('http://localhost:8086/getDetails');
+            const response = await fetch('https://MovieSearch.cfapps.us10-001.hana.ondemand.com/getDetails');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
