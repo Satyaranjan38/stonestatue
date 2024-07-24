@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5dded; /* Light pinkish background for a professional look */
+    background-color: #dfc8b4; /* Light gray background for a professional look */
     color: #333;
 }
 
@@ -26,13 +26,29 @@ header {
     height: 100%; /* Ensure navbar height matches header height */
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
 .logo img {
     height: 40px;
     width: 40px;
-    border-radius: 50%; /* Make the logo round */
-    background-color: #004d40; /* Match background color to blend with header */
-    padding: 5px; /* Add some padding */
+    border-radius: 50%;
+    background-color: #004d40;
+    padding: 5px;
 }
+
+.logo-text {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #778877; /* Text color */
+    margin-left: 10px; /* Space between logo and text */
+    font-weight: 500; /* Make text slightly bold */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Add some spacing between letters */
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
 
 .nav-links {
     list-style: none;
@@ -167,11 +183,11 @@ footer a:hover {
 }
 
 /* Responsive Design */
-/* Change nav-links color from white to black */
-
-
-/* Responsive Design for Mobile */
 @media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 1.5rem);
+    }
+
     .nav-links {
         flex-direction: column;
         align-items: flex-end; /* Align items to the right */
@@ -182,6 +198,13 @@ footer a:hover {
         flex-direction: column;
         align-items: flex-end; /* Align navbar to the right */
         
+    }
+}
+
+
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 1.5rem);
     }
 }
 
