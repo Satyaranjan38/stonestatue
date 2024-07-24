@@ -12,6 +12,7 @@ function hideLoader() {
 }
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
     
