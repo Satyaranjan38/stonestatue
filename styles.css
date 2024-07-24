@@ -172,17 +172,7 @@ footer a:hover {
         width: calc(50% - 1.5rem);
     }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-end; /* Align items to the right */
-        
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-end; /* Align navbar to the right */
-        
-    }
+    
 }
 
 
