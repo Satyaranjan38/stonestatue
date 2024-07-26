@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="data:${product.type};base64,${product.data}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
-                <p class="price">$${product.price} (Offer: $${product.offer})</p>
+                <p class="price">₹${product.price} </p>
                 <p>Posted by: ${product.createdBy}</p>
                 <p>Contact: ${product.contact}</p>
                 <p>Rating: ${product.ratings}/5</p>
